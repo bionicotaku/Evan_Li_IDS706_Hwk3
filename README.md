@@ -1,6 +1,5 @@
 # Evan_Li_IDS706_Hwk3
-
-[![CI](https://github.com/bionicotaku/Evan_Li_IDS706_Hwk3/actions/workflows/cicd.yml/badge.svg)](https://github.com/bionicotaku/Evan_Li_IDS706_Hwk3/actions/workflows/cicd.yml) [![Data Analysis](https://img.shields.io/badge/data%20analysis-complete-brightgreen)](https://github.com/bionicotaku/Evan_Li_IDS706_Hwk3/blob/main/analysis_results.md)
+[![Data Analysis](https://img.shields.io/badge/data%20analysis-complete-brightgreen)](https://github.com/bionicotaku/Evan_Li_IDS706_Hwk3/blob/main/analysis_results.md)
 
 [![Install](https://github.com/bionicotaku/Evan_Li_IDS706_Hwk3/actions/workflows//install.yml/badge.svg)](https://github.com/bionicotaku/Evan_Li_IDS706_Hwk3/actions/workflows/install.yml)
 [![Format](https://github.com/bionicotaku/Evan_Li_IDS706_Hwk3/actions/workflows/format.yml/badge.svg)](https://github.com/bionicotaku/Evan_Li_IDS706_Hwk3/actions/workflows/format.yml)
