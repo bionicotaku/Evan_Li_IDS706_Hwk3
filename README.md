@@ -1,6 +1,6 @@
 # Evan_Li_Mini2
 
-[![CI](https://github.com/bionicotaku/Evan_Li_Mini2/actions/workflows/cicd.yml/badge.svg)](https://github.com/bionicotaku/Evan_Li_Mini2/actions/workflows/cicd.yml) [![PDF](https://img.shields.io/badge/PDF-Salary%20Report-green?logo=adobe-acrobat-reader)](https://github.com/bionicotaku/Evan_Li_Mini2/blob/main/salary_analysis.pdf)
+[![CI](https://github.com/bionicotaku/Evan_Li_Mini2/actions/workflows/cicd.yml/badge.svg)](https://github.com/bionicotaku/Evan_Li_Mini2/actions/workflows/cicd.yml)
 
 ## Dataset Overview
 

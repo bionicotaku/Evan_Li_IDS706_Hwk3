@@ -1,43 +1,43 @@
-import pandas as pd
-import matplotlib.pyplot as plt
-from io import BytesIO
-from mylib.PDFCreator import create_pdf
+from mylib import calculate_stat
+from mylib import generate_markdown
+import io
+from contextlib import redirect_stdout
 
+def main():
+    # Read data
+    filteredData = calculate_stat.read_data("Dataset-salary-2024.csv")
+    
+    # Calculate and print statistics
+    stats = calculate_stat.calculate_stat(filteredData)
+    
+    # Plot salary distribution
+    calculate_stat.plot_salary_distribution(filteredData)
+    
+    # Plot and print job title distribution
+    job_title_counts = calculate_stat.plot_job_title_distribution(filteredData)
+    print("Top 20 Job Titles Distribution:")
+    print(job_title_counts)
+    
+    # Plot and print experience level distribution
+    experience_level_counts = calculate_stat.plot_experience_level_distribution(filteredData)
+    print("\nExperience Level Distribution:")
+    print(experience_level_counts)
+    
+    # Plot average salary by job title
+    calculate_stat.plot_average_salary_by_job(filteredData)
+    
+    # Plot salary vs experience level
+    calculate_stat.plot_salary_vs_experience(filteredData)
+    
+    # Calculate and print salary statistics by experience level
+    salary_stats = calculate_stat.calculate_salary_stats_by_experience(filteredData)
+    print("\nSalary Statistics by Experience Level:")
+    print(salary_stats)
 
-def calculate_stat(data):
-    salaryDataDesc = data.describe()
-    print(salaryDataDesc)
-    return salaryDataDesc
-
-
-salaryData = pd.read_csv("Dataset-salary-2024.csv")
-columns_to_keep = [
-    "work_year",
-    "experience_level",
-    "job_title",
-    "salary_in_usd",
-    "remote_ratio",
-    "company_size",
-]
-filteredData = salaryData[columns_to_keep]
-
-stats = calculate_stat(filteredData)
-
-# create a histogram of the salary data
-plt.figure(figsize=(10, 6))
-filteredData["salary_in_usd"].hist(bins=50)
-plt.title("Distribution of Salaries")
-plt.xlabel("Salary")
-plt.ylabel("Frequency")
-
-# save the plot to a buffer
-img_buffer = BytesIO()
-plt.savefig(img_buffer, format="png")
-img_buffer.seek(0)
-
-# prepare the text content
-text_content = f"Statistics:\n{stats.to_string()}"
-# create the PDF file
-create_pdf("salary_analysis.pdf", text_content, img_buffer)
-
-print("PDF has been created: salary_analysis.pdf")
+if __name__ == "__main__":
+    captured_output = io.StringIO()
+    with redirect_stdout(captured_output):
+        main()
+    output = captured_output.getvalue()
+    
+    generate_markdown.generate_markdown(output)
