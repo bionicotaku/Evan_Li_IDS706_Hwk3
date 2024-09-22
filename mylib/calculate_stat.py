@@ -17,8 +17,6 @@ def read_data(file_path):
 def calculate_stat(data):
     # Calculate descriptive statistics of the data.
     salaryDataDesc = data.describe()
-    print(salaryDataDesc)
-    print("\n")
     return salaryDataDesc
 
 def plot_salary_distribution(data):

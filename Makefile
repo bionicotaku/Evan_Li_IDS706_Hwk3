@@ -3,13 +3,13 @@ install:
 	pip install -r requirements.txt
 
 test:
-	python -m pytest -vv --nbval -cov=mylib -cov=main test_*.py
+	python -m pytest -vv --nbval -cov=mylib -cov=main test_*.py *.ipynb
 
 format:
 	black *.py
 
 lint:
-	ruff check *.py mylib/*.py test_*.py *.ipynb
+	ruff check *.py mylib/*.py test_*.py
 
 run:
 	python main.py
@@ -24,4 +24,4 @@ push:
 	git commit -m "Update" &&\
 	git push
 	
-all: install test lint format run push
+all: install format test lint run push
