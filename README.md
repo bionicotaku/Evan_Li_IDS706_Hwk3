@@ -1,7 +1,11 @@
-# Evan_Li_Mini2
+# Evan_Li_IDS706_Hwk3
 
-[![CI](https://github.com/bionicotaku/Evan_Li_Mini2/actions/workflows/cicd.yml/badge.svg)](https://github.com/bionicotaku/Evan_Li_Mini2/actions/workflows/cicd.yml)
+[![CI](https://github.com/bionicotaku/Evan_Li_IDS706_Hwk3/actions/workflows/cicd.yml/badge.svg)](https://github.com/bionicotaku/Evan_Li_IDS706_Hwk3/actions/workflows/cicd.yml) [![Data Analysis](https://img.shields.io/badge/data%20analysis-complete-brightgreen)](https://github.com/bionicotaku/Evan_Li_IDS706_Hwk3/blob/main/analysis_results.md)
 
+[![Install](https://github.com/bionicotaku/Evan_Li_IDS706_Hwk3/actions/workflows//install.yml/badge.svg)](https://github.com/bionicotaku/Evan_Li_IDS706_Hwk3/actions/workflows/install.yml)
+[![Format](https://github.com/bionicotaku/Evan_Li_IDS706_Hwk3/actions/workflows/format.yml/badge.svg)](https://github.com/bionicotaku/Evan_Li_IDS706_Hwk3/actions/workflows/format.yml)
+[![Lint](https://github.com/bionicotaku/Evan_Li_IDS706_Hwk3/actions/workflows/lint.yml/badge.svg)](https://github.com/bionicotaku/Evan_Li_IDS706_Hwk3/actions/workflows/lint.yml)
+[![Test](https://github.com/bionicotaku/Evan_Li_IDS706_Hwk3/actions/workflows/test.yml/badge.svg)](https://github.com/bionicotaku/Evan_Li_IDS706_Hwk3/actions/workflows/test.yml)
 ## Dataset Overview
 
 1. This dataset provides insights into data engineer salaries and employment attributes for the year 2024. It includes information such as:
