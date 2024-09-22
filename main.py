@@ -9,7 +9,7 @@ def main():
     filteredData = calculate_stat.read_data("Dataset-salary-2024.csv")
 
     # Calculate and print statistics
-    calculate_stat.calculate_stat(filteredData)
+    print(calculate_stat.calculate_stat(filteredData))
 
     # Plot salary distribution
     calculate_stat.plot_salary_distribution(filteredData)
