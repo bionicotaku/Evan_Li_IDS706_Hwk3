@@ -17,10 +17,16 @@ The data is sourced from [Kaggle's Data Engineer Salary in 2024 dataset](https:/
    - Company location
    - Company size
 
-## Project Features
+## Data Analysis
+Analyzed the following:
+- Statistical data and distribution of all salaries
+- Job Title Distribution
+- Experience Level Distribution
+- Average Salary By Job
+- Salary Statistics by Experience Level
 
-3. This project includes:
-   - Python script reading the dataset and generate descriptive statistics with data visualization
-   - A CI/CD badge indicating the status of our automated workflow
-   - The CI/CD workflow automatically pushes the generated PDF report to the main branch
-   - Another badge that links directly to the generated PDF file
+## Project Features
+1. Python script reading the dataset and generating descriptive statistics with data visualization, finally summarizing and creating an analysis_results.md file.
+2. Using Jupyter Notebook to perform descriptive statistics using Polars or Pandas, generating visual files.
+3. Creating test_script.py to test the script, test_lib.py to test the library, and finally using the nbval plugin for pytest to test all files including ipynb.
+4. Generated 4 badges, each linked to four GitHub actions.

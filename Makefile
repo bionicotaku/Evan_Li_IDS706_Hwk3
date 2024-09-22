@@ -24,4 +24,4 @@ push:
 	git commit -m "Update" &&\
 	git push
 	
-all: install format test lint run push
+all: install format test lint run
