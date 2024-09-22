@@ -10,7 +10,7 @@ def main():
 
     # Calculate and print statistics
     print(calculate_stat.calculate_stat(filteredData))
-    print("/n")
+    print("\n")
     # Plot salary distribution
     calculate_stat.plot_salary_distribution(filteredData)
 
