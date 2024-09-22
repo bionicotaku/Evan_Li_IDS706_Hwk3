@@ -5,6 +5,10 @@
 [![Format](https://github.com/bionicotaku/Evan_Li_IDS706_Hwk3/actions/workflows/format.yml/badge.svg)](https://github.com/bionicotaku/Evan_Li_IDS706_Hwk3/actions/workflows/format.yml)
 [![Lint](https://github.com/bionicotaku/Evan_Li_IDS706_Hwk3/actions/workflows/lint.yml/badge.svg)](https://github.com/bionicotaku/Evan_Li_IDS706_Hwk3/actions/workflows/lint.yml)
 [![Test](https://github.com/bionicotaku/Evan_Li_IDS706_Hwk3/actions/workflows/test.yml/badge.svg)](https://github.com/bionicotaku/Evan_Li_IDS706_Hwk3/actions/workflows/test.yml)
+
+
+You can find the Demo video here: [Evan Li IDS706 Individual Project #1](https://www.youtube.com/watch?v=WLUSvE0e2wE)
+
 ## Dataset Overview
 
 The data is sourced from [Kaggle's Data Engineer Salary in 2024 dataset](https://www.kaggle.com/datasets/chopper53/data-engineer-salary-in-2024). This dataset provides insights into data engineer salaries and employment attributes for the year 2024. It includes information such as:
