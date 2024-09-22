@@ -66,7 +66,9 @@ def plot_experience_level_distribution(data):
 
 def plot_average_salary_by_job(data):
     # Plot average salary for top 15 job titles.
-    average_salary_by_job = data.groupby('job_title')['salary_in_usd'].mean().sort_values(ascending=False)
+    average_salary_by_job = (data
+                             .groupby('job_title')['salary_in_usd']
+                             .mean().sort_values(ascending=False))
     top_15_jobs = average_salary_by_job.head(15)
     plt.figure(figsize=(12, 8))
     top_15_jobs.plot(kind='bar')
@@ -91,7 +93,8 @@ def plot_salary_vs_experience(data):
         'EX': 3   # Executive
     }
     data_copy = data.copy()
-    data_copy.loc[:, 'experience_numeric'] = data_copy['experience_level'].map(experience_map)
+    data_copy.loc[:, 'experience_numeric'] = (data_copy['experience_level']
+                                              .map(experience_map))
     
     plt.figure(figsize=(12, 8))
     plt.scatter(data_copy['experience_numeric'], data_copy['salary_in_usd'], alpha=0.5)

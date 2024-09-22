@@ -8,7 +8,7 @@ def main():
     filteredData = calculate_stat.read_data("Dataset-salary-2024.csv")
     
     # Calculate and print statistics
-    stats = calculate_stat.calculate_stat(filteredData)
+    calculate_stat.calculate_stat(filteredData)
     
     # Plot salary distribution
     calculate_stat.plot_salary_distribution(filteredData)
@@ -19,7 +19,8 @@ def main():
     print(job_title_counts)
     
     # Plot and print experience level distribution
-    experience_level_counts = calculate_stat.plot_experience_level_distribution(filteredData)
+    experience_level_counts = (calculate_stat
+                           .plot_experience_level_distribution(filteredData))
     print("\nExperience Level Distribution:")
     print(experience_level_counts)
     

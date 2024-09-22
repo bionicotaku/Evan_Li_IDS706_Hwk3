@@ -1,7 +1,3 @@
-import sys
-import io
-from contextlib import redirect_stdout
-
 def generate_markdown(output):    
     # Generate markdown content
     markdown_content = "# Data Analysis Results\n\n"
@@ -20,7 +16,10 @@ def generate_markdown(output):
     ]
 
     for image in image_files:
-        markdown_content += f"![{image.split('.')[0].replace('_', ' ').title()}](output/{image})\n\n"
+        markdown_content += (
+            f"![{image.split('.')[0].replace('_', ' ').title()}]"
+            f"(output/{image})\n\n"
+        )
 
     # Write markdown content to file
     with open("analysis_results.md", "w") as md_file:
