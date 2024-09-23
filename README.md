@@ -30,7 +30,7 @@ Analyzed the following:
 - Salary Statistics by Experience Level
 
 ## Project Features
-1. Python script reading the dataset and generating descriptive statistics with data visualization, finally summarizing and creating an analysis_results.md file. (All Pandas library calls, analysis, and plotting functions are done in the mylib/calculate_stat.py file)
+1. Python script reading the dataset and generating descriptive statistics with data visualization, finally summarizing and creating an analysis_results.md file. (All Pandas library calls, analysis, and plotting functions are in the mylib/calculate_stat.py file)
 2. Using Jupyter Notebook to perform descriptive statistics using Pandas, generating visual files.
 3. Creating test_script.py to test the script, test_lib.py to test the library, and finally using the nbval plugin for pytest to test all files including ipynb.
 4. Generated 4 badges, each linked to four GitHub actions.
